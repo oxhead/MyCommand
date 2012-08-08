@@ -1,4 +1,7 @@
 #!/bin/sh
+
+# Ref: http://0guzhan.blogspot.com/2012/03/killing-java-process-instances-on-linux.html
+
 # retrieving active java instances' processIds
 java_pids=$(ps -e | grep java | awk '{ print $1}')
  
